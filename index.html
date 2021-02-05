@@ -23,6 +23,7 @@
 
   <!-- transaction section -->
   <div id="transaction">
+    <button class="btn btn-warning" id="logout">Log out</button>
     <div class="row">
       <div class="col-md-4">
         <div class="deposit status">
@@ -68,6 +69,10 @@
       document.getElementById('sign-area').style.display = 'none';
       document.getElementById('transaction').style.display = 'block';
     });
+    document.getElementById('logout').addEventListener('click', function(){
+      document.getElementById('transaction').style.display = 'none';
+      document.getElementById('sign-area').style.display = 'block';
+    })
   </script>
 </body>
 </html>

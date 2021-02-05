@@ -17,6 +17,11 @@ body{
   margin: auto;
   display: none;
 }
+#logout{
+  position: absolute;
+  right: 100px;
+  top: 50px;
+}
 .status{
   color: white;
   margin: 0 30px;
