@@ -11,14 +11,63 @@
   
 </head>
 <body>
-  <div class="sign-in">
+  <div id="sign-area" class="sign-in">
     <h1 class="text-center">Welcome to the Pioneer Bank</h1>
     <div class="sign-card">
       <h4>Sign in</h4>
       <input type="email" class="form-control mt-4" placeholder="Your Email">
       <input type="password" class="form-control mt-4" placeholder="Password">
-      <button class="btn btn-success mt-4">Enter</button>
+      <button id="login" class="btn btn-success mt-4">Enter</button>
     </div>
   </div>
+
+  <!-- transaction section -->
+  <div id="transaction">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="deposit status">
+          <h5>Deposit</h5>
+          <h2>$00</h2>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="withdraw status">
+          <h5>Withdraw</h5>
+          <h2>$00</h2>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="balance status">
+          <h5>Balance</h5>
+          <h2>$1240</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 p-4">
+        <div class="deposit-form">
+          <h3>Deposit</h3>
+          <input type="number" class="form-control mt-4" placeholder="$" name="" id="">
+          <button class="btn btn-success mt-4">Deposit</button>
+        </div>
+      </div>
+      <div class="col-md-6 p-4">
+        <div class="withdraw-form">
+          <h3>Withdraw</h3>
+          <input type="number" class="form-control mt-4" placeholder="$" name="" id="">
+          <button class="btn btn-info mt-4">Withdraw</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    document.getElementById('login').addEventListener('click', function(){
+      document.getElementById('sign-area').style.display = 'none';
+      document.getElementById('transaction').style.display = 'block';
+    });
+  </script>
 </body>
 </html>

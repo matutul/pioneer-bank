@@ -12,3 +12,29 @@ body{
   border-radius: 10px;
   margin-top: 50px;
 }
+#transaction{
+  max-width: 1200px;
+  margin: auto;
+  display: none;
+}
+.status{
+  color: white;
+  margin: 0 30px;
+  border-radius: 15px;
+  padding: 20px;
+}
+.deposit{  
+  background-color: rgb(88, 144, 248);
+}
+.withdraw{
+  background-color: rgb(37, 192, 240);
+}
+.balance{
+  background-color: orange;
+}
+
+.deposit-form, .withdraw-form{
+  border-radius: 15px;
+  box-shadow: 8px 8px 25px rgba(200, 200, 200, .5);
+  padding: 30px;
+}
